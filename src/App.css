@@ -36,3 +36,822 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+        /* width: 100%;
+        height:100vh;  */
+}
+
+
+.left-context {
+    /* width: 100%; */
+    position: absolute;
+    top:30vh;
+    left: 10vh;
+    text-align: start;
+    
+}
+
+.left-context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+.logo{
+    width: 167px;
+    top: 5px;
+    height: 122px;
+    position: absolute;
+    left: 20px;
+    font-size: 3rem;
+	font-weight: 300;
+	transform: translateX(-100rem);
+	animation: slideIn .5s forwards;
+}
+.innovation, .research{
+    color: #989cf8;
+    font-family:r; 
+}
+/* .nav-img{
+    animation: swing ease-in-out 2s infinite alternate;
+    transform-origin: center -20px;
+    float: left;
+}
+.nav-img .img{
+    border: 5px solid #f8f8f8;
+    display: block;
+  width:200px;
+}
+.nav-img::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    top: -10px;
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+
+.nav-img::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -14px;
+    left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+
+
+@keyframes swing {
+    0% {
+        transform: rotate(8deg);
+    }
+    100%{
+        transform: rotate(-8deg);
+    }
+} */
+
+.right-main-img{
+width:70rem ;
+height: 60rem;
+left: 25rem;
+top: -7rem;
+
+
+position:relative;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+a{
+	text-decoration: none;
+	color: #eee;
+}
+
+header{
+	background-size: cover;
+	position: relative;
+  overflow: hidden;
+}
+
+.container{
+	max-width: 120rem;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.menu-toggle{
+	position: fixed;
+	top: 2.5rem;
+	right: 2.5rem;
+	color: #eeeeee;
+	font-size: 3rem;
+	cursor: pointer;
+	z-index: 1000;
+	display: none;
+}
+
+nav{
+	padding-top: 5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+nav ul{
+	display: flex;
+    cursor: pointer;
+    position: relative;
+    left: 50rem;
+    top: -40px;
+}
+
+nav ul li{
+	list-style: none;
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(1){
+	animation-delay: 0s;
+}
+
+nav ul li:nth-child(2){
+	animation-delay: .5s;
+}
+
+nav ul li:nth-child(3){
+	animation-delay: 1s;
+}
+
+nav ul li:nth-child(4){
+	animation-delay: 1.5s;
+}
+
+nav ul li a{
+	padding: 1rem 0;
+	margin: 0 3rem;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+nav ul li a:last-child{
+	margin-right: 0;
+}
+
+/* nav ul li a:hover, */
+nav ul li a:hover{
+    cursor: pointer;
+	/* content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+    display: block;
+    cursor: pointer;
+	background-color: crimson;
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s; */
+}
+
+nav ul li a::before{
+	top: 0;
+	transform-origin: left;
+}
+
+nav ul li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform: scaleX(1);
+}
+
+@keyframes slideIn {
+	from{
+
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+
+@media screen and (max-width: 700px){
+
+	.menu-toggle{
+		display: block;
+	}
+
+	nav{
+		padding-top: 0;
+		display: none;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 100vh;
+		text-align: center;
+	}
+
+	nav ul{
+		flex-direction: column;
+	}
+
+	nav ul li{
+		margin-top: 5rem;
+	}
+
+	nav ul li a{
+		margin: 0;
+		font-size: 2.5rem;
+	}
+
+	.brand{
+		font-size: 5rem;
+	}
+  
+  .overlay.menu-open,
+  nav.menu-open{
+	  display: flex;
+	  transform: scale(1);
+	  opacity: 1;
+  }
+  
+}
+.main-container{
+    background-color: white;
+    margin-top: -10rem;
+}
+.heading{
+    text-align: center;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.items{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+.item1,.item2, .item3, .item4{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #000;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+
+}
+.items div img{
+    border-radius: 100px;
+    position: relative;
+}
+.table-container{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+}
+.table-img{
+    text-align: center;
+    position: relative;
+    left: 1rem;
+    width: 500px;
+}
+.table-img-text{
+    position: relative;
+    left: rem;
+    top: 3rem;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    margin-left: 18rem;
+    margin-top: 4rem;
+    font-size: 20px;
+    color: #000;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+
+}
+.text-heading{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+    padding: 56px;
+}
+.normal-text{
+ position: relative;
+ left: -5rem;
+ width: 500px;
+}
+.seller-book-container{
+    background-color: white;
+    padding: 10px;
+}
+.text-points{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:self-start ;
+    position: relative;
+    left: 13rem;
+    font-size: 20px;
+    padding: 10px;
+}
+
+h5{
+    font-size: 23px;
+}
+.full-stars-example-two{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 20rem;
+
+}
+.btn{
+    background-color: white;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -9rem;
+
+}
+.submit-btn{
+    background-color: purple;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 15px;
+    width: 10%;
+}
+.submit-btn:hover{
+  font-size: 23px;
+  color: white;
+  cursor: pointer;
+  width: 11%;
+}
+.rating-group {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 29rem;
+    top: 9rem;
+  }
+  .book-img-text{
+    position: relative;
+    left: 13rem;
+    top: -16rem;
+    width: 500px;
+  }
+  .text-point1{
+    position: relative;
+    top: -11rem;
+  }
+  .footer-container{
+  position: relative;
+  top: -7rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+    background-color: white;
+  }
+  .footer-heading{
+    position: relative;
+    border: none;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    left: 4rem;
+    width: 500px;
+    border-radius: 10px;
+    height: 260px;
+    padding: 15px;
+    margin: 10rem;
+  }
+
+
+
+  #lab_social_icon_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 37rem;
+    padding: 5rem;
+    padding: 40px 0;
+    width: 300px;
+    height: 100px;
+    margin-top: -5rem;
+  }
+  
+  #lab_social_icon_footer a {
+    color: white;
+    /* background-color: white; */
+    padding: 10px;
+  }
+  
+  #lab_social_icon_footer .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  
+  #lab_social_icon_footer .social {
+    -webkit-transform: scale(0.8);
+    
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+  /*
+      Multicoloured Hover Variations
+  */
+  
+  #lab_social_icon_footer #social-fb:hover {
+    color: #3B5998;
+    /* color: white; */
+    background-color: white;
+    border-radius: 30px 9px;
+  }
+  
+  #lab_social_icon_footer #social-tw:hover {
+    color: #4099FF;
+    background-color: white;
+    border-radius: 30px 9px;
+  }
+  
+  #lab_social_icon_footer #social-gp:hover {
+    color: #d34836;   
+    background-color: white;
+    border-radius: 30px 9px;
+  }
+  
+  #lab_social_icon_footer #social-em:hover {
+    color: #f39c12;
+    background-color: white;
+    border-radius: 30px 9px;
+  }
+
+
+
+#full-stars-example {
+
+    /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+    .rating-group {
+      display: inline-flex;
+    }
+    
+    /* make hover effect work properly in IE */
+    .rating__icon {
+      pointer-events: none;
+    }
+    
+    /* hide radio inputs */
+    .rating__input {
+     position: absolute !important;
+     left: -9999px !important;
+    }
+  
+    /* set icon padding and size */
+    .rating__label {
+      cursor: pointer;
+      padding: 0 0.1em;
+      font-size: 2rem;
+    }
+    
+    /* set default star color */
+    .rating__icon--star {
+      color: orange;
+    }
+    
+    /* set color of none icon when unchecked */
+    .rating__icon--none {
+      color: #eee;
+    }
+  
+    /* if none icon is checked, make it red */
+    .rating__input--none:checked + .rating__label .rating__icon--none {
+      color: red;
+    }
+  
+    /* if any input is checked, make its following siblings grey */
+    .rating__input:checked ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+  
+    /* make all stars orange on rating group hover */
+    .rating-group:hover .rating__label .rating__icon--star {
+      color: orange;
+    }
+  
+    /* make hovered input's following siblings grey on hover */
+    .rating__input:hover ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+    
+    /* make none icon grey on rating group hover */
+    .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+       color: #eee;
+    }
+  
+    /* make none icon red on hover */
+    .rating__input--none:hover + .rating__label .rating__icon--none {
+      color: red;
+    }
+  }
+  
+  #half-stars-example {
+  
+    /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+    .rating-group {
+      display: inline-flex;
+    }
+    
+    /* make hover effect work properly in IE */
+    .rating__icon {
+      pointer-events: none;
+    }
+    
+    /* hide radio inputs */
+    .rating__input {
+     position: absolute !important;
+     left: -9999px !important;
+    }
+  
+    /* set icon padding and size */
+    .rating__label {
+      cursor: pointer;
+      /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+      padding: 0 0.1em;
+      font-size: 2rem;
+    }
+  
+    /* add padding and positioning to half star labels */
+    .rating__label--half {
+      padding-right: 0;
+      margin-right: -0.6em;
+      z-index: 2;
+    }
+    
+    /* set default star color */
+    .rating__icon--star {
+      color: orange;
+    }
+    
+    /* set color of none icon when unchecked */
+    .rating__icon--none {
+      color: #eee;
+    }
+  
+    /* if none icon is checked, make it red */
+    .rating__input--none:checked + .rating__label .rating__icon--none {
+      color: red;
+    }
+  
+    /* if any input is checked, make its following siblings grey */
+    .rating__input:checked ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+    
+    /* make all stars orange on rating group hover */
+    .rating-group:hover .rating__label .rating__icon--star,
+    .rating-group:hover .rating__label--half .rating__icon--star {
+      color: orange;
+    }
+  
+    /* make hovered input's following siblings grey on hover */
+    .rating__input:hover ~ .rating__label .rating__icon--star,
+    .rating__input:hover ~ .rating__label--half .rating__icon--star {
+      color: #ddd;
+    }
+    
+    /* make none icon grey on rating group hover */
+    .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+       color: #eee;
+    }
+  
+    /* make none icon red on hover */
+    .rating__input--none:hover + .rating__label .rating__icon--none {
+      color: red;
+    }
+  }
+  
+  #full-stars-example-two {
+  
+    /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+    .rating-group {
+      display: inline-flex;
+    }
+    
+    /* make hover effect work properly in IE */
+    .rating__icon {
+      pointer-events: none;
+    }
+    
+    /* hide radio inputs */
+    .rating__input {
+     position: absolute !important;
+     left: -9999px !important;
+    }
+    
+    /* hide 'none' input from screenreaders */
+    .rating__input--none {
+      display: none
+    }
+  
+    /* set icon padding and size */
+    .rating__label {
+      cursor: pointer;
+      padding: 0 0.1em;
+      font-size: 2rem;
+    }
+    
+    /* set default star color */
+    .rating__icon--star {
+      color: orange;
+    }
+  
+    /* if any input is checked, make its following siblings grey */
+    .rating__input:checked ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+    
+    /* make all stars orange on rating group hover */
+    .rating-group:hover .rating__label .rating__icon--star {
+      color: orange;
+    }
+  
+    /* make hovered input's following siblings grey on hover */
+    .rating__input:hover ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
